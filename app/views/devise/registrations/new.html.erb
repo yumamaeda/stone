@@ -1,0 +1,42 @@
+
+
+<h2 class="name">会員登録</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<div class="sign-box1">
+<div class="sign-box">
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <h class="sign-up-box">名前</h><br>
+    <%= f.text_field :name, autofocus: true,placeholder:"名前" %>
+  </div>
+
+  <div class="field">
+    <h class="sign-up-box">メールアドレス</h><br>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"例：stone@gmail.com" %>
+  </div>
+
+  <div class="field">
+    <h class="sign-up-box">パスワード</h><br>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> 文字以上)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password",placeholder:"例：stone1234" %>
+  </div>
+
+  <div class="field">
+    <h class="sign-up-box">パスワード確認</h><br>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder:"例：stone1234" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "送信する",class: "btn" %>
+  </div>
+</div>
+</div>
+<% end %>
+
+
+
+

@@ -1,0 +1,39 @@
+<div class="profile-container">
+    <h3 class="profile-name"><%= @user.name %></h3>
+	<% if @user.id = current_user.id %>
+	 <%= attachment_image_tag @user, :profile_image, :fill, 130, 130, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "sample_image.jpg", size:'130x130'  %>
+     <% if @user.id == current_user.id %>
+	<p><%= link_to "プロフィール編集", edit_user_path(@user), class: "pull-right", :style=>"color:black;"%></p>
+	<% end %>
+	<% end %>
+</div>
+
+ <div class="container">
+   <div class="image-box">
+   	 <% @stone_images.each do |stone_image| %>
+       <div class="imgtxtbox">
+   	  	  	<%= link_to stone_image_path(stone_image.id) do %>
+   	  	  	<%= attachment_image_tag stone_image, :image, :fill, 300, 300, class: "imgbox" %>
+   	  	  	<% end %>
+
+	          <h3 class="txtbox">
+   	  			<%= link_to stone_image_path(stone_image.id) do %>
+   	  			<%= stone_image.shop_name %>
+   	  			<% end %>
+   	  		 </h3>
+   	  		<p class="txtbox"><%= stone_image.caption %></p>
+   	  		<ul class="inline-meta">
+   	  			<li class="txtbox">By
+   	  			 <%= stone_image.user.name %>
+   	  			</li>
+   	  			<li class="txtbox">
+   	  			  <%= link_to "#{stone_image.stone_comments.count}コメント", stone_image_path(stone_image.id) %>
+   	  			</li>
+   	  		</ul>
+         </div>
+   	      <% end %>
+   </div>
+   </div>
+      <%= paginate @stone_images %>
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stone</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+     <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    <link rel="stylesheet" href="responsive.css">
+
+  </head>
+
+
+  <body>
+    <div class="head-menu">
+      <ul class="menu">
+        <li class="a">
+          <h1>Pietra</h1>
+        </li>
+        <% if user_signed_in? %>
+        <li class="a2">
+          <%= link_to "ログアウト",destroy_user_session_path,method: :delete, :style=>"color:white;"%>
+        </li>
+        <li class="a2">
+          <%= link_to 'マイページ', user_path(current_user.id), :style=>"color:white;" %>
+        </li>
+        <li class="a2">
+          <%= link_to '新規投稿',new_stone_image_path, :style=>"color:white;"%>
+        </li>
+        <li class="a2">
+          <%= link_to "投稿一覧",stone_images_path, :style=>"color:white;" %>
+        </li>
+      <% else %>
+       <li class="a2">
+        <%= link_to "新規登録", new_user_registration_path, :style=>"color:white;" %>
+      </li>
+      <li class="a2">
+        <%= link_to "ログイン", new_user_session_path, :style=>"color:white;" %>
+      </li>
+
+        <div class="btn-trigger" id="btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    <% end %>
+  </ul>
+</div>
+    <%= yield %>
+  </body>
+</html>

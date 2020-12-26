@@ -1,0 +1,18 @@
+
+          <div class="edit-form">
+          <h2 class="edit-name">プロフィール編集</h2>
+          <%= form_for(@user) do |f| %>
+          <div class="edit-content">
+              <div class="edit-form">名前</div>
+              <%= f.text_field :name, autofocus: true, class:"text-form", id:"inputName", placeholder:"名前"%>
+          </div>
+          <div class="edit-content">
+              <%= attachment_image_tag @user, :profile_image, :fill, 130, 130, class: "text-form", fallback: "sample_image.jpg"%>
+              <div class="edit-form" for="inputEmail">プロフィール画像</div>
+              <%= f.attachment_field :profile_image, placeholder: "プロフィール画像", class: "text-form" %>
+          </div>
+          <div class="edit-content">
+            <%= f.submit "変更を保存", class:"btn btn-lg btn-block btn-base-1 mt-20" %>
+          </div>
+          <% end %>
+        </div>

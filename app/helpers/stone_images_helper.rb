@@ -1,0 +1,2 @@
+module StoneImagesHelper
+end
