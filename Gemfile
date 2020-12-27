@@ -73,6 +73,5 @@ gem 'bootstrap-sass','~>3.3.6'
 gem 'jquery-rails'
 
 gem 'dotenv-rails'
-group :production do
-  gem 'mysql2'
-end
+gem 'mysql2', '>= 0.3.18', '< 0.6.0'
+
