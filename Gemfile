@@ -76,4 +76,3 @@ gem 'dotenv-rails'
 
 gem 'mysql2'
 
-gem 'listen'
