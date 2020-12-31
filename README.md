@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##アプリ名:Pietra(鉱石投稿アプリ)
 
-Things you may want to cover:
+##使用言語,フレームワーク
+Ruby
+Ruby on Rails
+HTML
+CSS
+Mysql
 
-* Ruby version
 
-* System dependencies
+##用途
+ログインすると投稿一覧画面が表示される。
+新規投稿では新しい画像と説明を投稿できる。
+投稿一覧では投稿された全ての写真を閲覧可能。
+マイページではユーザー情報の確認と変更、自分が投稿した写真を見れる。
 
-* Configuration
+##作成意図
+鉱石を眺めるのが趣味なのですが、鉱石だけを集めた鉱石写真専門サイトがなかったため、作成しました。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##Author
+Yuma Maeda
+yumadesign1124@gmail.com
