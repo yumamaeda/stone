@@ -2,7 +2,7 @@
 
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-	.btn-trigger {
+    .btn-trigger {
     position: absolute;
     top: 35px;
     right: 20px;
@@ -54,7 +54,7 @@
 display:none;
 }
 .post-image{
-	float:none!important;
+    float:none!important;
 }
 
 /*signbox*/
@@ -92,7 +92,7 @@ display:none;
 
 
 @media (max-width: 599px) {
-	.btn-trigger {
+    .btn-trigger {
     top: 3%;
 }
     .btn-trigger {
