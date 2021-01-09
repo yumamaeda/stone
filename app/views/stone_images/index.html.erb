@@ -14,7 +14,7 @@
             <p class="txtbox"><%= stone_image.caption %></p>
             <ul class="inline-meta">
                <li class="txtbox">投稿者
-                <%= stone_image.user.name %>
+                <%= @user.user.name %>
                </li>
                <li class="txtbox">
                  <%= link_to "#{stone_image.stone_comments.count}コメント", stone_image_path(stone_image.id) %>

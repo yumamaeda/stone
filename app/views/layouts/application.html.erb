@@ -8,9 +8,9 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="responsive.css">
-
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
   </head>
 
   <body>
@@ -32,6 +32,11 @@
         <li class="a2">
           <%= link_to "投稿一覧",stone_images_path, :style=>"color:white;" %>
         </li>
+        <div class="btn-trigger" id="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
       <% else %>
        <li class="a2">
         <%= link_to "新規登録", new_user_registration_path, :style=>"color:white;" %>
@@ -40,7 +45,7 @@
         <%= link_to "ログイン", new_user_session_path, :style=>"color:white;" %>
       </li>
 
-        <div class="btn-trigger" id="btn">
+    <div class="btn-trigger" id="btn">
     <span></span>
     <span></span>
     <span></span>

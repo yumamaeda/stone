@@ -87,6 +87,17 @@ display:none;
 .field{
     padding-bottom:10px!important;
 }
+
+
+/*show.html.erbの内容*/
+.stone-image-box{
+    text-align:center;
+}
+.post-image{
+    width:400px;
+    height:400px;
+    display:inline-block;
+}
 }
 
 
@@ -177,5 +188,16 @@ display:none;
 }
 .field{
     padding-bottom:10px!important;
+}
+
+
+/*show.html.erbの内容*/
+.stone-image-box{
+    text-align:center;
+}
+.post-image{
+    width:220px;
+    height:220px;
+    display:inline-block;
 }
 }
