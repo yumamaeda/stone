@@ -1,4 +1,5 @@
 <div class="login-m">
+
 <h2 class="name">ログイン</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -32,8 +33,8 @@
   </div>
 </div>
 </div>
-<div class="foot">
-<%= render "devise/shared/links" %>
-</div>
 <% end %>
+<div class="newbox">
+<%= link_to "新規登録はこちらから", "sign_up" %>
+</div>
 </div>

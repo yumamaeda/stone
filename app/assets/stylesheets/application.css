@@ -52,14 +52,17 @@
 a.li{
 	color:white;
 }
-
+.newbox{
+	text-align:center;
+	padding-top:40px;
+}
 
 
 
 
 .name{
 	text-align:center;
-	padding-top:30px;
+	padding-top:40px;
 }
 .field{
 	padding-bottom:5px;
@@ -67,7 +70,9 @@ a.li{
 .sign-up-box{
 	font-size:13px;
 	font-weight:bold;
+
 }
+
 .sign-box{
 padding:10px 0px 0px 0px;
 text-align:center;
@@ -77,16 +82,20 @@ text-align:center;
 	width:60%;
 }
 #user_name{
-	padding:10px 30px 10px 0px;
+	padding:10px 40px 10px 0px;
+	margin-bottom:10px;
 }
 #user_email{
-	padding:10px 30px 10px 0px;
+	padding:10px 40px 10px 0px;
+	margin-bottom:10px;
 }
 #user_password{
-	padding:10px 30px 10px 0px;
+	padding:10px 40px 10px 0px;
+	margin-bottom:10px;
 }
 #user_password_confirmation{
-	padding:10px 30px 10px 0px;
+	padding:10px 40px 10px 0px;
+	margin-bottom:10px;
 }
 .foot{
 	text-align:right;
