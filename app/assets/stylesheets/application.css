@@ -77,16 +77,16 @@ text-align:center;
 	width:60%;
 }
 #user_name{
-	padding:5px 30px 5px 0px;
+	padding:10px 30px 10px 0px;
 }
 #user_email{
-	padding:5px 30px 5px 0px;
+	padding:10px 30px 10px 0px;
 }
 #user_password{
-	padding:5px 30px 5px 0px;
+	padding:10px 30px 10px 0px;
 }
 #user_password_confirmation{
-	padding:5px 30px 5px 0px;
+	padding:10px 30px 10px 0px;
 }
 .foot{
 	text-align:right;
