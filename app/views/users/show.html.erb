@@ -1,10 +1,12 @@
 <div class="profile-container">
     <h3 class="profile-name"><%= @user.name %></h3>
 	<% if @user.id = current_user.id %>
-	 <%= attachment_image_tag @user, :profile_image, :fill, 130, 130, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "sample_image.jpg", size:'130x130'  %>
+  <div class="profile-content">
+	 <%= attachment_image_tag @user, :profile_image, :fill, 150, 150, format: 'jpeg', class: "img-circle pull-left profile-img", fallback: "sample_image.jpg", size:'150x150'  %>
      <% if @user.id == current_user.id %>
-	<p><%= link_to "プロフィール編集", edit_user_path(@user), class: "pull-right", :style=>"color:black;"%></p>
+	<a><%= link_to "プロフィール編集", edit_user_path(@user), class: "profile-content2", :style=>"color:black;"%></a>
 	<% end %>
+   </div>
 	<% end %>
 </div>
 
