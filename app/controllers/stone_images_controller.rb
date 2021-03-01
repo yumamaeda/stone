@@ -16,7 +16,6 @@ class StoneImagesController < ApplicationController
     end
     def index
         @stone_images = StoneImage.page(params[:page]).reverse_order
-        @user = StoneImage.find_by(params[:id])
     end
     def show
         @stone_image = StoneImage.find(params[:id])
@@ -32,4 +31,7 @@ class StoneImagesController < ApplicationController
     def stone_image_params
         params.require(:stone_image).permit(:shop_name, :image, :caption, :user_id)
     end
+    # def users
+    #     params.require(:user).permit(:name)
+    # end
 end

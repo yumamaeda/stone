@@ -12,8 +12,8 @@
 	<ul>
 	<li>
     <div class="image-box1">
-	 投稿者<a href="#">
-	 	<%= @stone_image.user.name %></a>
+	 投稿者
+	 	<%= @stone_image.user.name %>
    </div>
 	 </li>
 	 <li>
@@ -21,6 +21,7 @@
 	 	<%= @stone_image.created_at.strftime('%Y/%m/%d') %>
    </div>
 	 </li>
+
 	 <% if @stone_image.favorited_by?(current_user) %>
 	  <li>
     <div class="image-box1">
@@ -38,6 +39,7 @@
         <% end %>
      </li>
     <% end %>
+
 	 <li>
 	 	<a href="#comments"><%= @stone_image.stone_comments.count %>コメント</a>
 	 </li>
