@@ -50,13 +50,13 @@
 .newbox2{
 	display:block;
 	margin:0 auto;
-	padding:15px 15px 15px 15px;
+	padding:15px 30px 15px 0px;
 	text-align:left;
 }
 .newbox-content{
 	display:block;
 	margin:0 auto;
-	padding:5px 15px 5px 15px;
+	padding:5px 30px 5px 0px;
 }
 .new-content{
 	padding-bottom:10px;
@@ -68,8 +68,12 @@
 	display:block;
 	background-color:#f57a00;
 	color:white;
+	margin-top:20px;
 }
-
+.newbox-error{
+	text-align:center;
+	color:#440000;
+}
 .post-image{
 	float:left;
 	padding-top:30px;
