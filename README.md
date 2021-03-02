@@ -8,9 +8,9 @@ URL:http://ec2-18-178-173-26.ap-northeast-1.compute.amazonaws.com:3000/users/sig
 
 【ログイン情報】
 
-名前:stone
+名前:stone1
 
-メールアドレス:stone@gmail.com
+メールアドレス:stone1@example.com
 
 パスワード：stone1234
 
