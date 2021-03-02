@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:show, :edit, :update]
   root 'stone_images#index'
+  get  "/option"  => "stone_images#option"
 end

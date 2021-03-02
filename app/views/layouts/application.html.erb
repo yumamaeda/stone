@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stone</title>
+    <title>Pietra</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -26,16 +26,19 @@
       </li>
         <% if user_signed_in? %>
         <li class="a2">
-          <%= link_to "ログアウト",destroy_user_session_path,method: :delete, :style=>"color:white;"%>
+          <%= link_to "ログアウト",destroy_user_session_path,method: :delete, :style=>"color:white;", class:"headmenu"%>
         </li>
         <li class="a2">
-          <%= link_to 'マイページ', user_path(current_user.id), :style=>"color:white;" %>
+          <%= link_to 'マイページ', user_path(current_user.id), :style=>"color:white;", class:"headmenu" %>
         </li>
         <li class="a2">
-          <%= link_to '新規投稿',new_stone_image_path, :style=>"color:white;"%>
+          <%= link_to '新規投稿',new_stone_image_path, :style=>"color:white;", class:"headmenu"%>
         </li>
         <li class="a2">
-          <%= link_to "投稿一覧",stone_images_path, :style=>"color:white;" %>
+          <%= link_to "投稿一覧",stone_images_path, :style=>"color:white;", class:"headmenu" %>
+        </li>
+        <li class="a2">
+          <%= link_to "どんなアプリ",option_path, :style=>"color:white;", class:"headmenu" %>
         </li>
         <div class="btn-trigger" id="btn">
         <span></span>
