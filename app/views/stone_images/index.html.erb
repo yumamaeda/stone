@@ -17,6 +17,9 @@
                 <%= stone_image.user.name %>
                </li>
                <li class="txtbox">
+                <%= stone_image.created_at.strftime('%Y/%m/%d') %>
+             </li>
+               <li class="txtbox">
                  <%= link_to "#{stone_image.stone_comments.count}コメント", stone_image_path(stone_image.id) %>
                </li>
             </ul>

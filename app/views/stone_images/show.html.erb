@@ -27,7 +27,7 @@
     <div class="image-box1">
 	 	<%= link_to stone_image_favorites_path(@stone_image),method: :deleate do %>
 	 	<i class="fa fa-heart" aria-hidden="true" style="color: red;"></i>
-	 	<%= @stone_image.favorites.count %>いいね
+	 	<%= @stone_image.favorites.count %>
    </div>
 	 	<% end %>
 	  </li>
@@ -35,7 +35,7 @@
       <li>
         <%= link_to stone_image_favorites_path(@stone_image), method: :post do %>
         <i class="fa fa-heart-o" aria-hidden="true"></i>
-        <%= @stone_image.favorites.count %>いいね
+        <%= @stone_image.favorites.count %>
         <% end %>
      </li>
     <% end %>
@@ -72,7 +72,7 @@
 <%= form_for [@stone_image, @stone_comment] do |f| %>
  <div class="comment-box">
       <%= f.text_area :comment, rows:'5', class: "form-control",placeholder: "コメントをここに" %><br>
-  <%= f.submit "送信する", class: "btn btn-lg btn-base-1 mt-20 pull-right" %>
+  <%= f.submit "送信する", class: "btn btn-lg btn-base-1 mt-20 pull-left" %>
 
 <% end %>
 </div>
