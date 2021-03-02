@@ -12,26 +12,27 @@
 <ul>
 <li>
   <div class="image-box1">
- 投稿者
+ <a class="show-name">投稿者</a>
  	<%= @stone_image.user.name %>
  </div>
  </li>
  <li>
   <div class="image-box1">
+ <a class="show-name">投稿日</a>
  	<%= @stone_image.created_at.strftime('%Y/%m/%d') %>
  </div>
  </li>
 <!-- ここから新しく追加 -->
   <div class="image-box1">
-出会った場所
+<a class="show-name">出会った場所</a>
   <%= @stone_image.place %>
  </div>
   <div class="image-box1">
-お譲り可否
+<a class="show-name">お譲り可否</a>
   <%= @stone_image.change %>
  </div>
    <div class="image-box1">
-特徴
+<a class="show-name">特徴</a>
   <%= @stone_image.feature %>
  </div>
  <!-- ここまで -->

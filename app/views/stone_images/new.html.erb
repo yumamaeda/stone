@@ -12,10 +12,7 @@
 <% end %>
     <div class="new-content">
   	 <label class="control-label sr-only">石の名前</label>
-  	 <%= f.text_field :shop_name, class:"newbox-content", placeholder:"石の名前" %>
-    </div>
-    <div class="new-content">
-      <%= f.text_area :caption, class:"newbox2", row:"3", placeholder:"コメント" %>
+  	 <%= f.text_area :shop_name, class:"newbox-content-s", placeholder:"石の名前" %>
     </div>
     <div class="new-content">
       <%= f.text_area :feature, class:"newbox-content", placeholder:"特徴" %>
@@ -27,7 +24,9 @@
     <div class="new-content">
       <%= f.text_area :change, class:"newbox-content", placeholder:"お譲りの可否" %>
     </div>
-
+    <div class="new-content">
+      <%= f.text_area :caption, class:"newbox2", row:"3", placeholder:"コメント" %>
+    </div>
     <div class="new-content">
     <%= f.attachment_field :image ,class:"newbox-content"%>
   </div>

@@ -16,7 +16,9 @@
 	float:left;
 	padding:0px 30px 30px 30px;
 }
-
+.show-name{
+	font-weight:bold;
+}
 
 .edit-name{
 	padding:30px 0px 30px 0px;
@@ -39,7 +41,7 @@
 
 .new-name{
 	padding:30px 0px 30px 0px;
-	font-size:30px;
+	font-size:45px;
 	text-align:center;
 }
 .newbox{
@@ -50,13 +52,19 @@
 .newbox2{
 	display:block;
 	margin:0 auto;
-	padding:15px 30px 15px 0px;
+	padding:0px 70px 20px 0px;
 	text-align:left;
 }
 .newbox-content{
 	display:block;
 	margin:0 auto;
-	padding:5px 30px 5px 0px;
+	padding:0px 70px 20px 0px;
+}
+.newbox-content-s{
+	display:block;
+	margin:0 auto;
+	padding:0px 70px 5px 0px;
+	text-align:left
 }
 .new-content{
 	padding-bottom:10px;
@@ -78,8 +86,7 @@
 	float:left;
 	padding-top:30px;
 }
-.stone-index{
-}
+
 .stone-image-box{
     width:70%;
     margin:0 auto;
@@ -88,9 +95,9 @@
 	clear:both;
 }
 .stone-index{
+    display:inline-block;
 	font-size:20px;
-	text-align:center;
-	padding-top:100px;
+	padding:100px 0px 0px 100px;
 }
 .title{
 	padding-bottom:30px;
