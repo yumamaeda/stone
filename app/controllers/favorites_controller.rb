@@ -1,6 +1,7 @@
 class FavoritesController < ApplicationController
 
-	def create
+	def create 
+		logger.debug 'create'
 		stone_image = StoneImage.find(params[:stone_image_id])
 		favorite = current_user.favorites.new(stone_image_id: stone_image.id)
 		favorite.save
@@ -8,6 +9,7 @@ class FavoritesController < ApplicationController
 	end
 
 	def destroy
+		logger.debug 'destroy'
 		stone_image = StoneImage.find(params[:stone_image_id])
 		favorite = current_user.favorites.find_by(stone_image_id: stone_image.id)
 		favorite.destroy
