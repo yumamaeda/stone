@@ -18,6 +18,17 @@
       <%= f.text_area :caption, class:"newbox2", row:"3", placeholder:"コメント" %>
     </div>
     <div class="new-content">
+      <%= f.text_area :feature, class:"newbox-content", placeholder:"特徴" %>
+    </div>
+
+    <div class="new-content">
+      <%= f.text_area :place, class:"newbox-content", placeholder:"出会った場所" %>
+    </div>
+    <div class="new-content">
+      <%= f.text_area :change, class:"newbox-content", placeholder:"お譲りの可否" %>
+    </div>
+
+    <div class="new-content">
     <%= f.attachment_field :image ,class:"newbox-content"%>
   </div>
 <%= f.submit "送信",class:"new-box" %>

@@ -21,7 +21,20 @@
  	<%= @stone_image.created_at.strftime('%Y/%m/%d') %>
  </div>
  </li>
-
+<!-- ここから新しく追加 -->
+  <div class="image-box1">
+出会った場所
+  <%= @stone_image.place %>
+ </div>
+  <div class="image-box1">
+お譲り可否
+  <%= @stone_image.change %>
+ </div>
+   <div class="image-box1">
+特徴
+  <%= @stone_image.feature %>
+ </div>
+ <!-- ここまで -->
   <% if @stone_image.favorited_by?(current_user) %>
   <li>
   <div class="image-box1">

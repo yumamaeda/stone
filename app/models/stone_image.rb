@@ -7,7 +7,7 @@ class StoneImage < ApplicationRecord
 	validates :image, presence: true
 
 	def favorited_by?(user)
-		logger.debug "よしああ: #{favorites.where(user_id: user.id).exists?}"
+		# logger.debug "よしああ: #{favorites.where(user_id: user.id).exists?}"
 		favorites.where(user_id: user.id).exists?
 	end
 end
