@@ -32,13 +32,16 @@
           <%= link_to 'マイページ', user_path(current_user.id), :style=>"color:white;", class:"headmenu" %>
         </li>
         <li class="a2">
+          <%= link_to "お気に入り",favorite_path, :style=>"color:white;", class:"headmenu" %>
+        </li>
+        <li class="a2">
           <%= link_to '新規投稿',new_stone_image_path, :style=>"color:white;", class:"headmenu"%>
         </li>
         <li class="a2">
           <%= link_to "投稿一覧",stone_images_path, :style=>"color:white;", class:"headmenu" %>
         </li>
         <li class="a2">
-          <%= link_to "どんなアプリ",option_path, :style=>"color:white;", class:"headmenu" %>
+          <%= link_to "Pietraとは",option_path, :style=>"color:white;", class:"headmenu" %>
         </li>
         <div class="btn-trigger" id="btn">
         <span></span>

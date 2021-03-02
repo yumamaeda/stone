@@ -1,0 +1,27 @@
+<h1 class="option-title">お気に入りを表示</h1>
+
+   <div class="image-box">
+       <% @favorites.each do |favorite| %>
+       <div class="imgtxtbox">
+            <%= link_to stone_image_path(favorite.stone_image.id) do %>
+            <%= attachment_image_tag favorite.stone_image, :image, :fill, 300, 300, class: "imgbox" %>
+            <% end %>
+               <p class="txtbox1">by
+                <%= favorite.user.name %>
+               </p>
+             <h3 class="txtbox">
+               <%= link_to stone_image_path(favorite.stone_image.id) do %>
+               <%= favorite.stone_image.shop_name %>
+               <% end %>
+             </h3>
+            <ul class="inline-meta">
+               <li class="txtbox">
+                <%= favorite.stone_image.created_at.strftime('%Y/%m/%d') %>
+                <p><%= favorite.stone_image.caption %></p>
+             </li>
+            </ul>
+         </div>
+
+            <% end %>
+        </div>
+

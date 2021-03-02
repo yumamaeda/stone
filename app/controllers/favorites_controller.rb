@@ -16,4 +16,10 @@ class FavoritesController < ApplicationController
 	    redirect_to stone_image_path(stone_image)
 	end
 
+	def index
+		@user = current_user
+		@favorites = Favorite.where(user_id: @user.id).all
+		@stone_images = StoneImage.page(params[:page]).reverse_order
+	end
+
 end

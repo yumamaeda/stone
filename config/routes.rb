@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
   root 'stone_images#index'
   get  "/option"  => "stone_images#option"
+  get  "/favorite"  => "favorites#index"
 end
