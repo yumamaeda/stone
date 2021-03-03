@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   	resources :stone_comments, only: [:create, :destroy]
   end
   resources :users, only: [:show, :edit, :update]
-  root 'stone_images#index'
+  root 'stone_images#option'
   get  "/option"  => "stone_images#option"
   get  "/favorite"  => "favorites#index"
 end
