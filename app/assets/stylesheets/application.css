@@ -22,7 +22,9 @@
 }
 
 @import "bootstrap";
-
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+    background-color: white;
+}
 .head-menu{
 	background-color:black;
 	/*padding:25px;*/
@@ -32,6 +34,10 @@
 }
 .headmenu{
 	text-decoration: none;
+}
+.headmenu1{
+	text-decoration: none;
+
 }
 .menu{
 	margin:0;
@@ -63,8 +69,6 @@ a.li{
 	text-align:center;
 	padding-top:40px;
 }
-
-
 
 
 .name{

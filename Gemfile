@@ -75,3 +75,4 @@ gem 'jquery-rails'
 gem 'dotenv-rails'
 
 gem 'mysql2'
+
