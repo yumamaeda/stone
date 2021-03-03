@@ -25,6 +25,10 @@
 .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
     background-color: white;
 }
+.drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-nav, .drawer--right.drawer-open .drawer-navbar .drawer-hamburger{
+	top:10px;
+	right:8px;
+}
 .head-menu{
 	background-color:black;
 	/*padding:25px;*/

@@ -35,6 +35,7 @@
     <nav class="drawer-nav" role="navigation">
       <ul class="drawer-menu">
         <% if user_signed_in? %>
+        <li><a class="drawer-brand" href="http://localhost:3000/">Pietra</a></li>
         <li><%= link_to "Pietraとは",option_path, :style=>"color:black;", class:"drawer-menu-item" %></li>
         <li><%= link_to "投稿一覧",stone_images_path, :style=>"color:black;", class:"drawer-menu-item" %></li>
         <li><%= link_to '新規投稿',new_stone_image_path, :style=>"color:black;", class:"drawer-menu-item"%></li>
