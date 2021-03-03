@@ -1,15 +1,15 @@
-
-.image-box{
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix{
 	margin-left: auto;
-	width:85%;
+	width:75%;
     margin:0 auto;
     background-color:white;
-}
-.index-title{
-	text-align:center;
-	font-size:40px;
-	padding-top:30px;
-	padding-bottom:10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .imgbox{
 	padding:30px 0px 0px 0px;
@@ -17,14 +17,20 @@
 .txtbox{
     padding:0px 0px 0px 30px;
 }
+.index-title{
+	text-align:center;
+	font-size:40px;
+	padding-top:30px;
+	padding-bottom:10px;
+}
 .txtbox1{
 	 padding:0px 0px 10px 30px;
 	 color:#595960;
 	 font-size:15px;
 }
 .imgtxtbox1{
-	float:left;
-	padding:0px 15px 30px 15px;
+	width: 31%;
+	padding:0px 10px 30px 10px;
 	margin:0 auto;
 }
 .show-name{
