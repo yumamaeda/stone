@@ -2,6 +2,14 @@
 
 }
 @media (min-width: 600px) and (max-width: 1024px) {
+   .clearfix{
+    display:block!important;
+    text-align:center;
+    width:100%!important;
+   }
+   .imgtxtbox1{
+    width:100%!important;
+   }
     .btn-trigger {
     position: absolute;
     top: 35px;
@@ -103,6 +111,14 @@ display:none;
 
 
 @media (max-width: 599px) {
+    .clearfix{
+    display:block!important;
+    text-align:center;
+    width:100%!important;
+   }
+   .imgtxtbox1{
+    width:100%!important;
+   }
     .btn-trigger {
     top: 3%;
 }

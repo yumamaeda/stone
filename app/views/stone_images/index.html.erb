@@ -1,7 +1,7 @@
 <h1 class="index-title">投稿一覧</h1>
 <div class="clearfix">
  <% @stone_images.each do |stone_image| %>
- <div class="imgtxtbox1">
+ <div class="imgtxtbox1 ">
   <%= link_to stone_image_path(stone_image.id) do %>
   <%= attachment_image_tag stone_image, :image, :fill, 300, 300, class: "imgbox" %>
   <% end %>
