@@ -24,16 +24,31 @@
 	padding-bottom:10px;
 }
 .txtbox1{
-	 padding:0px 0px 10px 30px;
+	 padding:8px 0px 10px 30px;
 	 color:#595960;
-	 font-size:15px;
+	 font-size:13px;
 }
 .imgtxtbox1{
 	width: 31%;
 	padding:0px 10px 30px 10px;
 	margin:0 auto;
 }
-
+.txtbox-day{
+	font-size:13px;
+	color:#595960;
+	padding-top:8px;
+	paddding-bottom:-2px;
+	font-weight:bold;
+}
+.txtbox-comment{
+	font-size:13px;
+	color:#595960;
+	padding-top:5px;
+	font-weight:bold;
+}
+.fonticon{
+	padding-right:5px;
+}
 .show-name{
 	font-weight:bold;
 }
@@ -92,7 +107,7 @@
 	height:30px;
 	margin:0 auto;
 	display:block;
-	background-color:#f57a00;
+	background-color:#E94F77;
 	color:white;
 	margin-top:20px;
 }

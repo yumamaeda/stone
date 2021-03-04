@@ -5,7 +5,7 @@
   <%= link_to stone_image_path(stone_image.id) do %>
   <%= attachment_image_tag stone_image, :image, :fill, 300, 300, class: "imgbox" %>
   <% end %>
-  <p class="txtbox1">by
+  <p class="txtbox1"><i class="fas fa-user-circle fonticon"></i>by
     <%= stone_image.user.name %>
   </p>
   <h3 class="txtbox">
@@ -15,7 +15,9 @@
  </h3>
  <ul class="inline-meta">
    <li class="txtbox">
+    <p class="txtbox-day">投稿日</p>
     <%= stone_image.created_at.strftime('%Y/%m/%d') %>
+    <p class="txtbox-comment">コメント</p>
     <p><%= stone_image.caption %></p>
   </li>
 </ul>
