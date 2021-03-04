@@ -106,6 +106,10 @@ display:none;
     height:400px;
     display:inline-block;
 }
+.new-content{
+    width:100%!important;
+    text-align:center!important;
+}
 }
 
 
@@ -215,5 +219,9 @@ display:none;
     width:220px;
     height:220px;
     display:inline-block;
+}
+.new-content{
+    width:100%!important;
+    text-align:center!important;
 }
 }

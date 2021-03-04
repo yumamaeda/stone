@@ -3,33 +3,37 @@
 
 <%= form_for(@stone_image, url:stone_images_path) do |f| %>
 <% if @stone_image.errors.any? %>
- 	<h2 class="newbox-error"><%= @stone_image.errors.count %>件のエラーが発生しました。</h2>
- 	<ul>
- 		<% @stone_image.errors.full_messages.each do |message| %>
- 		<li class="newbox-error"><%= message %></li>
- 		<% end %>
- 	</ul>
+<h2 class="newbox-error"><%= @stone_image.errors.count %>件のエラーが発生しました。</h2>
+<ul>
+ <% @stone_image.errors.full_messages.each do |message| %>
+ <li class="newbox-error"><%= message %></li>
+ <% end %>
+</ul>
 <% end %>
-    <div class="new-content">
-  	 <label class="control-label sr-only">石の名前</label>
-  	 <%= f.text_area :shop_name, class:"newbox-content-s", placeholder:"石の名前" %>
-    </div>
-    <div class="new-content">
-      <%= f.text_area :feature, class:"newbox-content", placeholder:"特徴" %>
-    </div>
+<div class="new-content">
+  <label class="new-content-55">石の名前</label>
+  <%= f.text_area :shop_name, class:"newbox-content-s", placeholder:"石の名前" %>
+</div>
+<div class="new-content">
+  <label class="new-content-55">特徴</label>
+  <%= f.text_area :feature, class:"newbox-content", placeholder:"特徴" %>
+</div>
 
-    <div class="new-content">
-      <%= f.text_area :place, class:"newbox-content", placeholder:"出会った場所" %>
-    </div>
-    <div class="new-content">
-      <%= f.text_area :change, class:"newbox-content", placeholder:"お譲りの可否" %>
-    </div>
-    <div class="new-content">
-      <%= f.text_area :caption, class:"newbox2", row:"3", placeholder:"コメント" %>
-    </div>
-    <div class="new-content">
-    <%= f.attachment_field :image ,class:"newbox-content"%>
-  </div>
+<div class="new-content">
+  <label class="new-content-55">出会った場所</label>
+  <%= f.text_area :place, class:"newbox-content", placeholder:"出会った場所" %>
+</div>
+<div class="new-content">
+  <label class="new-content-55">お譲りの可否</label>
+  <%= f.text_area :change, class:"newbox-content", placeholder:"お譲りの可否" %>
+</div>
+<div class="new-content">
+  <label class="new-content-55">コメント</label>
+  <%= f.text_area :caption, class:"newbox2", row:"3", placeholder:"コメント" %>
+</div>
+<div class="new-content">
+  <%= f.attachment_field :image ,class:"newbox-content"%>
+</div>
 <%= f.submit "送信",class:"new-box" %>
 <% end %>
 
