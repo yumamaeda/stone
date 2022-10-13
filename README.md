@@ -4,7 +4,8 @@
 Pietra(鉱石投稿アプリ)
 
 ## アプリURL
-URL:http://ec2-18-178-173-26.ap-northeast-1.compute.amazonaws.com:3000
+~~URL:http://ec2-18-178-173-26.ap-northeast-1.compute.amazonaws.com:3000~~
+AWSから撤退したため、接続不可
 
 【ログイン情報】
 
@@ -17,8 +18,8 @@ Ruby
 Ruby on Rails
 HTML
 CSS
-AWS
-EC2(Puma,Nginx)
+~~AWS~~
+~~EC2(Puma,Nginx)~~
 Mysql
 
 
