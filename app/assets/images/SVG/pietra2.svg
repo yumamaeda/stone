@@ -1,0 +1,13 @@
+<svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="369.938" height="142.305" viewBox="0 0 369.938 142.305">
+  <text transform="translate(0 97.125)" style="isolation: isolate;font-size: 111px;font-family: Krungthep">Pietra</text>
+  <rect x="32.684" y="43.827" width="7.858" height="7.394" transform="translate(-22.881 39.804) rotate(-45)" style="fill: #fff"/>
+  <rect x="42.094" y="35.622" width="7.858" height="5.85" transform="translate(-13.777 43.829) rotate(-45)" style="fill: #fff"/>
+  <rect x="22.789" y="34.032" width="7.858" height="5.85" transform="translate(-18.307 29.712) rotate(-45)" style="fill: #fff"/>
+  <path d="M36.44,51.79l.71-.43,3.6-13.34H31.18L35.67,51.3Zm4-14.49-4.42-5.36L31.56,37.3Zm-18.39.72,12.3,12.22L30.3,38.03ZM38.44,50.45,51.03,38.02H41.72ZM27.74,31.79,22,37.3h8ZM50.87,37.3l-5.89-5.71L42.04,37.3ZM35.44,31.24h-7l2.29,5.64Zm8.74,0H36.56l4.69,5.69Z" transform="translate(0 -0.005)" style="fill: #e85077"/>
+  <rect x="20.51" y="29.135" width="6.36" height="29.7" transform="translate(-24.164 29.629) rotate(-45)"/>
+  <rect x="32.224" y="43.005" width="29.7" height="6.72" transform="translate(-18.997 46.861) rotate(-45)"/>
+  <rect x="21.22" y="22.225" width="29.7" height="9"/>
+  <rect x="17.454" y="32.128" width="12.66" height="3" transform="translate(-16.812 26.662) rotate(-45)"/>
+  <rect x="46.289" y="26.302" width="3" height="12.66" transform="translate(-9.077 43.345) rotate(-45)"/>
+  <polygon points="102.13 23.895 92.39 29.445 82.7 23.785 82.76 12.575 92.5 7.015 102.19 12.675 102.13 23.895"/>
+</svg>

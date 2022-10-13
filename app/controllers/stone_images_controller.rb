@@ -1,5 +1,7 @@
 class StoneImagesController < ApplicationController
 
+
+
 	def new
 	    @stone_image = StoneImage.new
     end
@@ -27,6 +29,9 @@ class StoneImagesController < ApplicationController
     end
     private
     def stone_image_params
-        params.require(:stone_image).permit(:shop_name, :image, :caption)
+        params.require(:stone_image).permit(:shop_name, :image, :caption, :user_id, :feature, :place, :change)
     end
+    # def users
+    #     params.require(:user).permit(:name)
+    # end
 end
